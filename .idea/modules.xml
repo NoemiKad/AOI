@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/aoi.iml" filepath="$PROJECT_DIR$/aoi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pl.sda.ms.zk.aoi.iml" filepath="$PROJECT_DIR$/.idea/modules/pl.sda.ms.zk.aoi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pl.sda.ms.zk.aoi.main.iml" filepath="$PROJECT_DIR$/.idea/modules/pl.sda.ms.zk.aoi.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pl.sda.ms.zk.aoi.test.iml" filepath="$PROJECT_DIR$/.idea/modules/pl.sda.ms.zk.aoi.test.iml" />
     </modules>
   </component>
 </project>
