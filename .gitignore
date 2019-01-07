@@ -94,3 +94,17 @@ gradle-app.setting
 
 /.idea/
 
+!/aoi/out/
+!/src/main/java/model/Event.class
+!/src/main/java/model/ProgramPoint.class
+!/src/main/java/model/User.class
+!/aoi/out/production/classes/pl/aoi/marek/branch/model/Event.class
+!/aoi/out/production/classes/pl/aoi/marek/branch/model/ProgramPoint.class
+AOI_DATABASE.architect~
+AOI_DATABASE.json.architect~
+src/main/java/dao/
+src/main/java/model/Event.class
+src/main/java/model/ProgramPoint.class
+src/main/java/model/User.class
+
+!/src/main/java/dao/
