@@ -1,0 +1,29 @@
+
+header{
+
+}
+section{
+    display: -webkit-flex;
+    display: flex;
+}
+body{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+
+}
+nav{
+    -webkit-felx:1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #83a9b1;
+    padding: 3% 5% 0% 3% ;
+    align-content: center;
+}
+article{
+    -webkit-flex: auto;
+    -ms-flex-align: center;
+    background-color: white;
+    border-color: #778b8f;
+    padding: 10% 20% 10% 10%;
+
+}
