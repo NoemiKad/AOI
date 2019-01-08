@@ -2,6 +2,7 @@ package service.impl;
 
 import dao.daoInter.ProgramPointDao;
 import model.Event;
+import model.ProgramPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,9 @@ public class ProgramPointServiceImpl implements ProgramPointService {
     @Autowired
     public ProgramPointServiceImpl(@Qualifier ("h2") ProgramPointDao programPointDao){ this.programPointDao=programPointDao; }
 
+
     @Override
-    public List<Event> getAllEvents() {
+    public List<ProgramPoint> getAllProgramPoints() {
         return null;
     }
 }
