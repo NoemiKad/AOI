@@ -8,4 +8,6 @@ public interface EventService {
 
 
     List<Event> getAllEvents();
+    boolean saveEvent(Event newEvent);
+    boolean deleteEvent();
 }

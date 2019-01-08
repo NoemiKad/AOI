@@ -15,6 +15,7 @@ import java.util.List;
 @Service
 public class EventServiceImpl implements EventService {
 
+
     private static final Logger logger = LoggerFactory.getLogger(EventServiceImpl.class);
     private EventDao eventDao;
 
@@ -32,5 +33,19 @@ public class EventServiceImpl implements EventService {
             result.add(eventIterator.next());
         }
         return result;
+    }
+
+    @Override
+    public boolean saveEvent(Event newEvent) {
+        logger.debug("saveEvent()");
+
+        return eventDao.saveEvent(newEvent);
+    }
+
+    @Override
+    public boolean deleteEvent() {
+        logger.debug("deleteEvent()");
+        return eventDao.delateEvent();
+
     }
 }
