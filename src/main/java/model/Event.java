@@ -29,24 +29,24 @@ public class Event {
     @Column(
             name = "No_rooms"
     )
-    private int roomNumber;
+    private int no_rooms;
     @Column(
             name = "Opening_date"
     )
-    private Date OpeningDate;
+    private Date opening_date;
     @Column(
             name = "Ending_date"
     )
-    private Date EndingDate;
+    private Date ending_date;
 
     public Event() {
     }
 
-    public Event(String place, int roomNumber, Date openingDate, Date endingDate) {
+    public Event(String place, int no_rooms, Date opening_date, Date ending_date) {
         this.place = place;
-        this.roomNumber = roomNumber;
-        this.OpeningDate = openingDate;
-        this.EndingDate = endingDate;
+        this.no_rooms = no_rooms;
+        this.opening_date = opening_date;
+        this.ending_date = ending_date;
     }
 
     public int getId() {
@@ -73,31 +73,31 @@ public class Event {
         this.place = place;
     }
 
-    public int getRoomNumber() {
-        return this.roomNumber;
+    public int getno_rooms() {
+        return this.no_rooms;
     }
 
-    public void setRoomNumber(int roomNumber) {
-        this.roomNumber = roomNumber;
+    public void setno_rooms(int no_rooms) {
+        this.no_rooms = no_rooms;
     }
 
-    public Date getOpeningDate() {
-        return this.OpeningDate;
+    public Date getopening_date() {
+        return this.opening_date;
     }
 
-    public void setOpeningDate(Date openingDate) {
-        this.OpeningDate = openingDate;
+    public void setopening_date(Date opening_date) {
+        this.opening_date = opening_date;
     }
 
-    public Date getEndingDate() {
-        return this.EndingDate;
+    public Date getending_date() {
+        return this.ending_date;
     }
 
-    public void setEndingDate(Date endingDate) {
-        this.EndingDate = endingDate;
+    public void setending_date(Date ending_date) {
+        this.ending_date = ending_date;
     }
 
     public String toString() {
-        return "Event{id=" + this.id + ", name='" + this.name + '\'' + ", place='" + this.place + '\'' + ", roomNumber=" + this.roomNumber + ", OpeningDate=" + this.OpeningDate + ", EndingDate=" + this.EndingDate + '}';
+        return "Event{id=" + this.id + ", name='" + this.name + '\'' + ", place='" + this.place + '\'' + ", no_rooms=" + this.no_rooms + ", opening_date=" + this.opening_date + ", ending_date=" + this.ending_date + '}';
     }
 }

@@ -24,7 +24,7 @@ public class ProgramPoint {
     @Column(
             name = "program_type"
     )
-    private String pogramType;
+    private String program_type;
     @Column(
             name = " description"
     )
@@ -38,9 +38,9 @@ public class ProgramPoint {
     )
     private String hours;
     @Column(
-            name = "requisition"
+            name = "ppl_slots_max"
     )
-    private String requisition;
+    private String ppl_slots_max;
     @Column(
             name = "ppl_slots_min"
     )
@@ -67,16 +67,16 @@ public class ProgramPoint {
     private String status;
 
     public String toString() {
-        return "ProgramPoint{id=" + this.id + ", title='" + this.title + '\'' + ", pogramType='" + this.pogramType + '\'' + ", description='" + this.description + '\'' + ", author='" + this.author + '\'' + ", hours='" + this.hours + '\'' + ", requisition='" + this.requisition + '\'' + ", minimalPeopleNumber='" + this.minimalPeopleNumber + '\'' + ", maximalPeopleNumber='" + this.maximalPeopleNumber + '\'' + ", picture='" + this.picture + '\'' + ", timeLength='" + this.timeLength + '\'' + ", trigger='" + this.trigger + '\'' + ", status='" + this.status + '\'' + '}';
+        return "ProgramPoint{id=" + this.id + ", title='" + this.title + '\'' + ", program_type='" + this.program_type + '\'' + ", description='" + this.description + '\'' + ", author='" + this.author + '\'' + ", hours='" + this.hours + '\'' + ", ppl_slots_max='" + this.ppl_slots_max + '\'' + ", minimalPeopleNumber='" + this.minimalPeopleNumber + '\'' + ", maximalPeopleNumber='" + this.maximalPeopleNumber + '\'' + ", picture='" + this.picture + '\'' + ", timeLength='" + this.timeLength + '\'' + ", trigger='" + this.trigger + '\'' + ", status='" + this.status + '\'' + '}';
     }
 
-    public ProgramPoint(String title, String pogramType, String description, String author, String hours, String requisition, String minimalPeopleNumber, String maximalPeopleNumber, String picture, String timeLength, String trigger, String status) {
+    public ProgramPoint(String title, String program_type, String description, String author, String hours, String ppl_slots_max, String minimalPeopleNumber, String maximalPeopleNumber, String picture, String timeLength, String trigger, String status) {
         this.title = title;
-        this.pogramType = pogramType;
+        this.program_type = program_type;
         this.description = description;
         this.author = author;
         this.hours = hours;
-        this.requisition = requisition;
+        this.ppl_slots_max = ppl_slots_max;
         this.minimalPeopleNumber = minimalPeopleNumber;
         this.maximalPeopleNumber = maximalPeopleNumber;
         this.picture = picture;
@@ -101,12 +101,12 @@ public class ProgramPoint {
         this.title = title;
     }
 
-    public String getPogramType() {
-        return this.pogramType;
+    public String getprogram_type() {
+        return this.program_type;
     }
 
-    public void setPogramType(String pogramType) {
-        this.pogramType = pogramType;
+    public void setprogram_type(String program_type) {
+        this.program_type = program_type;
     }
 
     public String getDescription() {
@@ -133,12 +133,12 @@ public class ProgramPoint {
         this.hours = hours;
     }
 
-    public String getRequisition() {
-        return this.requisition;
+    public String getppl_slots_max() {
+        return this.ppl_slots_max;
     }
 
-    public void setRequisition(String requisition) {
-        this.requisition = requisition;
+    public void setppl_slots_max(String ppl_slots_max) {
+        this.ppl_slots_max = ppl_slots_max;
     }
 
     public String getMinimalPeopleNumber() {
