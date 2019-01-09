@@ -2,15 +2,40 @@ package pl.aoi.marek.branch.model;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "program_database")
-public class ProgramPoint {
+public class ProgramPoint implements Serializable {
 
     @Id
     @GeneratedValue
     @Column(name = "id")
     private int id;
+
+    @ManyToOne
+    @JoinColumn
+    private Event event;
+
+    @ManyToOne
+    @JoinColumn
+    private User user;
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     @Column(name = " title ")
     private String title;

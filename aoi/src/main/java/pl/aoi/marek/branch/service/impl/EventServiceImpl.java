@@ -3,6 +3,7 @@ package pl.aoi.marek.branch.service.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import pl.aoi.marek.branch.dao.EventDao;
 import pl.aoi.marek.branch.model.Event;
@@ -19,7 +20,7 @@ public class EventServiceImpl implements EventService {
     private EventDao eventDao;
 
     @Autowired
-    public EventServiceImpl(EventDao eventDao) {
+    public EventServiceImpl(@Qualifier("h2") EventDao eventDao) {
         this.eventDao = eventDao;
     }
 

@@ -17,7 +17,7 @@ public class EventDaoImpl implements EventDao {
 
     private static final Logger logger = LoggerFactory.getLogger(EventDaoImpl.class);
     static List<Event> events = new ArrayList<>();
-    static AtomicLong idGenerator = new AtomicLong (1);
+
 
 
     @Override
@@ -31,8 +31,6 @@ public class EventDaoImpl implements EventDao {
         logger.debug("createEvent");
 
         if (null == event.getId()) {
-            long eventNewId = idGenerator.getAndIncrement();
-            event.setId(eventNewId);
             events.add(event);
         } else {
             events.set((int) (event.getId() - 1), event);
