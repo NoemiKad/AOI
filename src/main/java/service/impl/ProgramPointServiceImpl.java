@@ -13,6 +13,7 @@ import service.ProgramPointService;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ProgramPointServiceImpl implements ProgramPointService {
@@ -45,12 +46,19 @@ public class ProgramPointServiceImpl implements ProgramPointService {
 
     @Override
     public List<ProgramPoint> getProgramPointsFromEvent(String eventTitle) {
+        logger.debug("getProgramPointsFromEvent(), eventTitle: {}", eventTitle);
+
+
         return null;
     }
 
     @Override
-    public List<ProgramPoint> getProgramPointsOfType(String type) {
-        return null;
+    public List<ProgramPoint> getProgramPointsOfType(String program_type) {
+        logger.debug("getProgramPointsOfType, type:{}", program_type);
+
+        return getAllProgramPoints().stream()
+                .filter(programPoint -> programPoint.getprogram_type().equalsIgnoreCase(program_type))
+                .collect(Collectors.toList());
     }
 
     @Override
