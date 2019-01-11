@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<form action="add-or-edit-user.html" method="post">
+    <input type="hidden" name="id">
+    <div><label>Login: </label><input type="text" name="login" th:field="*{login}">*</div>
+    <div><label>Hasło:</label> <input type="text" name="password">*</div>
+    <div><label>E-mail:</label> <input type="text" name="email">*</div>
+    <div><label>Telefon:</label> <input type="text" name="phonenumber"></div>
+    <div><label>Imię: </label><input type="text" name="name"></div>
+    <div><label>Nazwisko:</label><input type="text" name="login"></div>
+    <div><label>Miasto: </label><input type="text" name="city"></div>
+    <div><label>RODO</label><input type="checkbox" name=""rodo></div>
+    <input type="hidden" name="usertype"></p>
+    <div><input type="button" value="Wyślij"><input type="reset" value="Resetuj"/></div>
+
+</form>
+
+</body>
+</html>

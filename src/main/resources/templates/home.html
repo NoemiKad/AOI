@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>AOI - avangardowe organizowanie imprez</title>
@@ -10,10 +10,12 @@
 <section>
     <nav>
         <ul>
-            <li><a href="#">Lista wydarzeń</a> </li>
-            <li><a href="#">Zaloguj się</a> </li>
-            <li><a href="create-or-change-user.html">Rejestracja</a> </li>
-            <li><a href="home.html">Wróć</a> </li>
+            <li><div></div><a href="event.html">Lista wydarzeń</a></div> </li>
+            <li><div></div><a href="login.html">Zaloguj się</a></div> </li>
+            <li><div><a href="add-or-edit-user.html">Rejestracja</a></div> </li>
+            <li><div sec:authorize="hasRole('ADMIN')"><a href="#">Dodaj wydarzenie</a> </div></li>
+            <li><div sec:authorize="isAuthenticated()"><a href="#">Twoje punkty programu</a> </div></li>
+            <li><div><a href="home.html">Wróć</a></div> </li>
         </ul>
     </nav>
 
